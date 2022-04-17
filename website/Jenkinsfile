@@ -1,0 +1,10 @@
+pipeline {
+    agent { docker { image 'phpappli' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'php --version'
+            }
+        }
+    }
+}
