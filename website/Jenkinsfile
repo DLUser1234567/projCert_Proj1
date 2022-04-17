@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'phpappli' } }
-    stages {
-        stage('build') {
+   agent any
+   stages {
+       stage('build') {
             steps {
-                sh 'php --version'
+               echo "Hello Jenkins"
             }
         }
     }
